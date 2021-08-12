@@ -1,0 +1,487 @@
+// Mixin Section Starts Here
+@mixin heading1Mob {
+    font-size: 20px;
+    word-spacing: 1px;
+}
+
+@mixin para1Mob {
+    font-size: 15px;
+    word-spacing: 0px;
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+@mixin heading2Mob {
+    font-size: 23px;
+}
+
+@mixin para2Mob {
+    font-size: 14px;
+    margin-top: 20px;
+    line-height: 24px;
+}
+// Mixin Section Ends Here
+
+//  Media Queries For Mobile Devices 
+
+@media only screen and (max-width: 760px) {
+    // Navigation Starts Here
+    nav {
+
+        .center {
+            flex-direction: row;
+            padding: 5px;
+            animation-name: slideDown;
+
+            img {
+                width: 100%;
+            }
+
+            .logo {
+                padding-top: 5px;
+                max-width: 170px;
+            } 
+
+            button {
+                display: inline-block;
+            }
+        }
+
+
+        .center ul {
+            height: 100vh;
+            width: 100vw;
+            padding: 20px;
+            justify-content: flex-start;
+            flex-direction: column;
+            position: fixed;
+            top: 60px;
+            left: 100%;
+            background-color: white;
+
+            li {
+                text-align: right;
+                width: 100%;
+                margin-top: 20px;
+            }
+            li:first-child {
+                margin: 0;
+            }
+        }
+    }
+    // Navigation Ends Here
+
+    // Website Header Starts Here #_Mobile_Devices 
+    header {
+        padding-top: 150px;
+        height: 600px;
+
+        .center {
+            max-width: 400px;
+        }
+
+        h1 {
+            font-weight: 500;
+            letter-spacing: 1px;
+            word-spacing: 2px;
+            font-size: 25px;
+            line-height: 35px;
+        }
+
+        h3 {
+            font-size: 14px;
+            margin-top: 20px;
+            line-height: 25px;
+        }
+
+        button {
+            margin-top: 25px;
+            width: 100%;
+            padding: 10px;
+        }
+    }
+    // Website Header Ends Here #_Mobile_Devices 
+
+    // Website Body Starts Here #_Mobile_Devices 
+    // Section 1 Starts Here
+    #sec1 {
+        .center {
+            flex-direction: column;
+            max-width: 300px;
+        }
+
+        .box {
+            width: 100%;
+            margin-top: 50px;
+            padding: 20;
+        }
+        
+        .box:first-child {
+            margin: 0;
+        }
+    }
+    // Section 1 Ends Here
+
+    // Section 2 Starts Here
+    #sec2 {
+        max-width: 400px;
+        flex-direction: column;
+        margin-top: 80px;
+        padding-bottom: 80px;
+        text-align: center;
+
+        .imageContainer {
+            width: 100%;
+
+            img {
+                max-width: 200px;
+            }
+        }
+
+        .text {
+            width: 100%;
+            margin-top: 30px;
+            h3 {
+                @include heading1Mob;
+            }
+
+            p {
+                @include para1Mob;
+            }
+        }
+    }
+    // Section 2 Ends Here
+
+    // Section 3 Starts Here
+    #sec3 {
+        max-width: 400px;
+        flex-direction: column-reverse;
+        margin-top: 80px;
+        text-align: center;
+
+        .imageContainer {
+            width: 100%;
+
+            img {
+                max-width: 200px;
+            }
+        }
+
+        .text {
+            width: 100%;
+            margin-top: 30px;
+            h3 {
+                @include heading1Mob;
+            }
+
+            p {
+                @include para1Mob;
+            }
+        }
+    }
+    // Section 3 Ends Here
+
+    // Section 4 Starts Here 
+    #sec4 {
+        margin-top: 80px;
+        padding-top: 100px;
+        padding-bottom: 80px;
+
+        .center {
+            max-width: 400px;
+        }
+
+        .headings {
+            h2 {
+                @include heading2Mob;
+            }
+
+            p {
+                @include para2Mob;
+            }
+        }
+
+        .boxRow {
+            max-width: 200px;
+            margin: 50px auto 0;
+            flex-direction: column;
+
+            .box {
+                width: 100%;
+            }
+
+            .marginTopMob {
+                margin-top: 40px;
+            }
+        }
+    }
+    // Section 4 Ends Here 
+
+    // Section 5 Starts Here
+    #sec5 {
+        margin-top: 80px;
+
+        .headings {
+            h2 {
+                @include heading2Mob;
+            }
+
+            p {
+                @include para2Mob;
+            }
+        }
+
+        .boxRow {
+            max-width: 250px;
+            margin: 50px auto 0;
+            flex-direction: column;
+
+            .box {
+                width: 100%;
+                margin-top: 40px;
+
+                p {
+                    font-size: 13px;
+                    line-height: 22px;
+                    margin-top: 20px;
+                }
+
+                .name {
+                    margin-top: 20px;
+                    flex-direction: column;
+                    text-align: center;
+                }
+                
+                .name .text p {
+                    text-align: center;
+                }
+                
+                .name .text h3 {
+                    font-size: 15px;
+                }
+
+                .name .person {
+                    width: 100%;
+                }
+
+                .name .text {
+                    width: 100%;
+                    padding: 0;
+                    margin-top: 15px;
+                }
+            }
+
+            .box:first-child {
+                margin: 0;
+            }
+        }
+    }
+    // Section 5 Ends Here
+
+    // Section 6 Starts here
+    #sec6 {
+        margin-top: 80px;
+        padding: 100px 0 100px;
+
+        .headings {
+            h2 {
+                @include heading2Mob;
+            }
+
+            p {
+                @include para2Mob;
+            }
+        }
+
+        .boxRow {
+            max-width: 400px;
+            margin-top: 10px;
+
+            .box {
+                margin-top: 40px;
+                padding: 30px 20px 30px;
+
+                h3 {
+                    font-size: 15px;
+                }
+
+                .price {
+                    padding: 15px 10px 15px;
+                }
+
+                .price .amt {
+                    font-size: 23px;
+                }
+
+                .price .monthly {
+                    font-size: 14px; 
+                    margin-top: 5px;
+                }
+
+                a {
+                    margin-top: 40px;
+                    padding: 10px;
+                    width: 100%;
+                }
+            }
+
+            .box ul {
+                margin-top: 30px;
+            }
+        }
+    }
+    // Section 6 Ends here
+
+    // Section 7 Starts Here
+    #sec7 {
+        padding: 100px 0 100px;
+
+        .center {
+            max-width: 400px;
+            flex-direction: column;
+        }
+
+        .midcircle {
+            @include flexBox;
+            justify-content: center;
+        }
+        
+        .box, .circle {
+            width: 100%;
+        }
+
+        .box {
+            margin: 0;
+
+            h2 {
+                font-size: 30px;
+            }
+    
+            h3 {
+                font-size: 15px;
+                margin-top: 10px;
+            }
+        }
+
+        .circle {
+            margin: 40px 0;
+        }
+    }
+    // Section 7 Ends Here
+
+    // Section 8 Starts Here
+    #sec8 {
+        margin: 80px auto 80px;
+
+        .headings {
+            h2 {
+                @include heading2Mob;
+            }
+
+            p {
+                @include para2Mob;
+            }
+        }
+
+        .boxRow {
+            margin-top: 10px;
+            flex-direction: column;
+
+            .box {
+                width: 100%;
+                margin-top: 40px;
+            }
+
+            .box h3 {
+                font-size: 16px;
+                margin-top: 20px;
+            }
+
+            .box p {
+                line-height: 23px;
+                margin-top: 20px;
+            }
+
+            .box button {
+                margin-top: 20px;
+                padding: 10px;
+                width: 100%;
+            }
+        }
+    }
+    // Section 8 Ends Here
+
+    // Section 9 Starts Here
+    #sec9 {
+        padding: 100px 0 100px;
+
+        .center {
+            max-width: 400px;
+        }
+
+        .headings {
+            h2 {
+                @include heading2Mob;
+            }
+
+            p {
+                @include para2Mob;
+            }
+        }
+
+        .keepintouch {
+            .left p {
+                margin-top: 15px;
+                line-height: 23px;
+            }
+
+            .right {
+                margin-top: 10px;
+            }
+
+            .right .formRow {
+                flex-direction: column;
+
+                input {
+                    width: 100%;
+                    margin-top: 30px;
+                    font-size: 14px;
+                }
+            }
+
+            .right textarea {
+                font-size: 14px;
+                margin-top: 30px;
+            }
+
+            .right textarea::placeholder {
+                font-size: 14px;
+            }
+
+            .right button {
+                margin-top: 30px;
+                padding: 10px;
+                width: 100%;
+            }
+        }
+    }
+    // Section 9 Ends Here
+    // Website Body Ends Here #_Mobile_Devices 
+
+    // Website Footer Starts Here #_Mobile_Devices 
+    footer {
+        .center {
+            max-width: 400px;
+        }
+
+        .social {
+            flex-direction: column;
+            align-items: center;
+            
+            a {
+                margin-top: 20px;    
+            }
+        }
+    }
+    // Website Footer Ends Here #_Mobile_Devices 
+}

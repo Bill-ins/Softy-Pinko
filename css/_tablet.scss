@@ -1,0 +1,233 @@
+//  Media Queries For Tablet Devices 
+
+@media only screen and (max-width: 1100px) {
+    // Navigation Starts Here
+    nav {
+        top: 0;
+        
+        .center {
+            border-radius: 0;
+            flex-direction: column;
+            max-width: 100%;
+            padding-top: 10px;
+            animation-name: slideDown;
+            
+            .logo {
+                width: 100%;
+                text-align: center;
+            }
+
+            ul {
+                margin-top: 5px;
+                width: 100%;
+            }
+        }
+    }
+    // Navigation Ends Here
+
+    // Website Header Starts Here #_Tablet_Devices 
+    header {
+        .center {
+            width: 90%;
+        }
+    }
+    // Website Header Ends Here #_Tablet_Devices 
+
+    // Website Body Starts Here #_Tablet_Devices 
+    // Section 1 Starts Here
+    #sec1 {
+        position: static;
+
+        .center {
+            justify-content: space-evenly;
+        }
+
+        .box {
+            width: 40%;
+        }
+
+        .margintop {
+            margin-top: 50px;
+        }
+    }
+    // Section 1 Ends Here
+
+    // Section 2 Starts Here
+    #sec2 {
+        width: 90%;
+        max-width: 768px;
+
+        .imageContainer {
+            width: 30%;
+        }
+
+        .text {
+            width: 60%;
+            h3 {
+                margin: 0;
+            }
+        }
+    }
+    // Section 2 Ends Here
+
+    // Section 3 Starts Here
+    #sec3 {
+        width: 90%;
+        max-width: 768px;
+
+        .text {
+            width: 60%;
+            h3 {
+                margin: 0;
+            }
+        }
+
+        .imageContainer {
+            width: 30%;
+        }
+    }
+    // Section 3 Ends Here
+
+    // Section 4 Starts Here 
+    #sec4 {
+        .center {
+            max-width: 700px;
+            width: 90%;
+        }
+
+        .boxRow {
+            .box {
+                width: 28%;
+            }
+
+            .marginTopTab {
+                margin-top: 50px;
+            }
+        }
+    }
+    // Section 4 Ends Here 
+
+    // Section 5 Starts Here
+    #sec5 {
+        width: 90%;
+        max-width: 760px;
+
+        .boxRow {
+            justify-content: space-around;
+
+            .box {
+                width: 47%;
+
+                .name:hover .text {
+                    transform: translateX(0px);
+                }
+            }
+
+            .margintop {
+                margin-top: 50px;
+            }
+        }
+    }
+    // Section 5 Ends Here
+
+    // Section 6 Starts here
+    #sec6 {
+        .center {
+            width: 90%;
+        }
+
+        .boxRow {
+            max-width: 500px;
+            margin: 20px auto 0;
+            flex-direction: column;
+
+            .box {
+                width: 100%;
+                margin-top: 50px;
+            }
+        }
+    }
+    // Section 6 Ends here
+
+    // Section 7 Starts Here
+    #sec7 {
+        .center {
+            width: 90%;
+            max-width: 700px;
+        }
+
+        .midcircle {
+            display: none;
+        }
+
+        .box, .circle {
+            width: 33%;
+        }
+
+        .circle1 {
+            margin-top: 20px;
+        }
+
+        .circle3 {
+            margin-top: 50px+20px;
+        }
+        
+        .marginTopTab {
+            margin-top: 50px;
+        }
+    }
+    // Section 7 Ends Here
+
+    // Section 8 Starts Here
+    #sec8 {
+        width: 90%;
+
+        .boxRow {
+            max-width: 700px;
+            margin: 70px auto 0;
+            justify-content: space-around;
+
+            .box {
+                width: 45%;
+                max-width: 300px;
+                margin: 0 auto;
+            }
+
+            .marginTopTab {
+                margin-top: 50px;
+            }
+        }
+    }
+    // Section 8 Ends Here
+
+    // Section 9 Starts Here
+    #sec9 {
+        .center {
+            width: 90%;
+            max-width: 700px;
+        }
+
+        .keepintouch {
+            flex-direction: column;
+            text-align: center;
+
+            .left, .right {
+                width: 100%;
+            }
+
+            .right {
+                margin-top: 50px;
+            }
+        }
+    }
+    // Section 9 Ends Here
+    // Website Body Ends Here #_Tablet_Devices 
+
+    // Website Footer Starts Here #_Tablet_Devices 
+    footer {
+        .center {
+            width: 90%;
+        }
+    }
+    // Website Footer Ends Here #_Tablet_Devices 
+}
